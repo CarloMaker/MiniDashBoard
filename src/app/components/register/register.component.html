@@ -1,0 +1,12 @@
+<h1>Login</h1>
+<form (ngSubmit)="onSubmit(registerForm)" #registerForm="ngForm">
+<mat-form-field>
+    <mat-label>UserName</mat-label>
+    <input matInput ngModel name="email" required >
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Password</mat-label>
+    <input matInput ngModel name="password" required>
+</mat-form-field>
+<button mat-raised-button type = "submit" [disabled]="!registerForm.valid" primary>Registrati</button>
+</form>
